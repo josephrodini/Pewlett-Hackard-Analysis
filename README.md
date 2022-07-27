@@ -15,7 +15,7 @@ Structured Query Language (SQL) was used to generate queries to answer P-H's que
 
 ## Retiring Employees
 
-Two csv files were merged together with inner join (employees and titles). The results were filtered by birth date to create a preliminary results table. Then, redundant employee records as well as employees that have since left the company were removed from the data set via SELECT DISTINCT ON. Finally, the employees were aggregated by job title. From the resulting table, we learn that:
+Two csv files were merged together with inner join (employees and titles). The results were filtered by birth date to create [a preliminary results table (with the query used to generate it)](https://github.com/josephrodini/Pewlett-Hackard-Analysis/blob/main/retirement_titles.PNG). Then, redundant employee records as well as employees that have since left the company were removed from the data set via SELECT DISTINCT ON. Finally, the employees were aggregated by job title. [From the resulting table (and the query used to generate it)](https://github.com/josephrodini/Pewlett-Hackard-Analysis/blob/main/retiring_titles.PNG), we learn that:
 
 - The table includes employees’ titles and their sum.
 - The job title with the most retiring employees is Senior Engineer (25916).
@@ -23,7 +23,7 @@ Two csv files were merged together with inner join (employees and titles). The r
 
 ## Mentorship Program
 
-Three csv files (employees, titles, and dept_emp) were merged together with inner join. The results were filtered by birthdate and current employment status. The resulting table tells us that: 
+Three csv files (employees, titles, and dept_emp) were merged together with inner join. The results were filtered by birthdate and current employment status. [The resulting table (as well as the query used to generate it)](https://github.com/josephrodini/Pewlett-Hackard-Analysis/blob/main/mentorship_eligibility.PNG) tells us that: 
 
 - The table contains employee number, first name, last name, birth date, from date, to date and title.
 - 1549 employeees are eligible for the mentorship program.
@@ -38,7 +38,7 @@ According to our table, 72,458 employees are meeting the retirement criteria and
 
 ## Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-Considering the retirement eligibility age range was three years while the mentorship eligibility age range was just one year, it makes sense that there are more than enough mentors for the program. What would be helpful is a table of current employees for multiple cohorts (other years or combination of years) to see if the mentorship program can be expanded further.
+Considering the retirement eligibility age range was three years while the mentorship eligibility age range was just one year, it makes sense that there are more than enough mentors (72,458) for the program's eligible candidates (1549). What would be helpful is a table of current employees for multiple cohorts (other birth years or combinations of years) to see if the mentorship program can be expanded further.
 
 ## Limitations
 
